@@ -39,3 +39,6 @@ En la imagen anterior también hay que modificar el valor "range [ip]" por nuest
 
 - Reiniciamos el servidor y comprobamos que los servicios van bien.
 ![3](./imagenes/servicioscomprobar.png)
+
+#### Como último paso
+vamos a verificar que el cliente funciona y opera correctamente. Para ello, debemos crear una MV sin disco duro que solo tenga RAM, en modo "red interna" y configurar la memoria gráfica a 128MB y habilitar el soporte 3D.
