@@ -1,3 +1,5 @@
+# Configuración de SSH y LTSP
+
 El primer paso para nuestra práctica será configurar las redes.
  Una de ellas nos servirá para comunicarnos con el exterior y la otra, como red interna para trabajar con los demás ordenadores.
  ![imagen01](./imagenes/1.png)
@@ -36,3 +38,6 @@ En la imagen anterior también hay que modificar el valor "range [ip]" por nuest
 
 Reiniciamos el servidor y comprobamos que los servicios van bien.
 ![3](./imagenes/servicioscomprobar.png)
+
+### Como último paso
+debemos verificar que la máquina virtual cliente se conecta con el servidor. Para ello debemos crear otra máquina virtual sin disco duro con muy poca RAM y arrancar el cliente desde red/PXE.
