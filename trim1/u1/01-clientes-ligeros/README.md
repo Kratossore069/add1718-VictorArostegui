@@ -40,4 +40,13 @@ Reiniciamos el servidor y comprobamos que los servicios van bien.
 ![3](./imagenes/servicioscomprobar.png)
 
 ### Como último paso
-debemos verificar que la máquina virtual cliente se conecta con el servidor. Para ello debemos crear otra máquina virtual sin disco duro con muy poca RAM y arrancar el cliente desde red/PXE.
+debemos verificar que la máquina virtual cliente se conecta con el servidor. Para ello debemos crear otra máquina virtual sin disco duro y arrancar el cliente desde red/PXE.
+
+- Es importante destacar que no es lo mismo la memoria RAM que la memoria de vídeo de la MV. Debemos poner al máximo la memoria de vídeo y la configuración normal de la RAM.
+
+- También es necesario que la red interna esté bien debido a que el cliente se conecta por red interna y, al estar las dos máquinas funcionando, en la pantalla del cliente debe aparecer la imagen de ubuntu conseguida del servidor.
+
+Al final aparecerá esto en la pantalla del cliente.
+![2](./imagenes/cliente.png)
+
+`Aparecen dos ventanas y se desconoce el por qué aparece de esta manera.`
