@@ -1,6 +1,6 @@
 # Práctica de VNC
 
-En esta práctica vamos a inicializar el VNC. Para ello primero necesitamos instalar una máquina OpenSUSE.
+### VNC en OpenSuse
 
 Lo primero que necesitamos instalar en OpenSUSE desde `Yast -> VNC`
 
@@ -17,3 +17,7 @@ Aparecerá un mensaje de que faltan algunos componentes y que habrá que instala
 Al acabar la instalación se deberá reiniciar el sistema.
 
 ![2](./img/4.png)
+
+### VNC en Windows
+
+Vamos a instalar un servicio VNC en una máquina Windows. Lo primero que haremos será
