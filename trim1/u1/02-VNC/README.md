@@ -20,4 +20,10 @@ Al acabar la instalación se deberá reiniciar el sistema.
 
 ### VNC en Windows
 
-Vamos a instalar un servicio VNC en una máquina Windows. Lo primero que haremos será
+Vamos a instalar un servicio VNC en una máquina Windows. Lo primero que haremos será instalar un programa llamado `TightVNC`
+
+![2](./img/5.png)
+
+La siguiente parte es importante por que en la máquina servidor necesitamos instalar `SOLAMENTE` el modo servidor.
+
+![2](./img/6.png)
