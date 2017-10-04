@@ -27,3 +27,15 @@ Vamos a instalar un servicio VNC en una máquina Windows. Lo primero que haremos
 La siguiente parte es importante por que en la máquina servidor necesitamos instalar `SOLAMENTE` el modo servidor.
 
 ![2](./img/6.png)
+
+Una vez instalado nos vamos a la MV del cliente e instalamos `SOLAMENTE`  el `Viewer`.
+
+![2](./img/7.png)
+
+Cuando haya concluído, iniciamos las dos máquinas virtuales y encendemos ambos programas. Aparcerá una pantalla que nos pedirá la IP de la máquina remota y, automáticamente, podremos observar la otra máquina.
+
+![2](./img/8.png)
+
+Como última medida, insertamos el último comando en la `PowerShell` El comando es `netstat -n` y permite observar las IPs.
+
+![2](./img/9.png)
