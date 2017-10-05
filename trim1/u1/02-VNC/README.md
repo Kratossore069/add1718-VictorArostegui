@@ -51,7 +51,3 @@ Cuando haya concluído, iniciamos las dos máquinas virtuales y encendemos ambos
 Como última medida, insertamos el último comando en la `PowerShell` El comando es `netstat -n` y permite observar las IPs.
 
 ![2](./img/9.png)
-
-### VNC de Windows a OpenSUSE
-
-Vamos a hacer una prueba de cómo funcionaría el VNC desde Windows a OpenSUSE.
