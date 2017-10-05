@@ -18,6 +18,18 @@ Al acabar la instalación se deberá reiniciar el sistema.
 
 ![2](./img/4.png)
 
+Si aparecen problemas para poder usar el VNC debeŕiamos desactivar el cortafuegos.
+
+![2](./img/susevnc2.png)
+
+Ejecutamos el comando `vncviewer` desde el terminal y las dos pantallas se verían.
+
+![2](./img/vncopensuseprueba.png)
+
+Como último paso ejecutamos `netstat -p` en la terminal para examinar las direcciones.
+
+![2](./img/netstat.png)
+
 ### VNC en Windows
 
 Vamos a instalar un servicio VNC en una máquina Windows. Lo primero que haremos será instalar un programa llamado `TightVNC`
