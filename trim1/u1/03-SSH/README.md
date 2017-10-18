@@ -46,3 +46,33 @@ El siguiente comando es `netstat -ntap` para comprobar que el servicio tiene el 
 Hacemos `ssh [ip-del-servidor]` para verificar que las máquinas se ven entre ellas.
 
 ![1](./img/11.png)
+
+### ¿Y si cambiamos las claves del servidor?
+
+Confirmamos que existen ficheros en `/etc/ssh` y debemos ver que existen `ssh_host*key` y `ssh_host*key.pub`.
+
+![](./img/14.png)
+
+Vamos a configurar el `sshd_config` y dejamos una única línea `HostKey /etc/ssh/ssh_host_rsa_key`. Debemos destildar esa línea.
+
+![](./img/15.png)
+
+Vamos a regenerar nuevas claves para la identificación de nuestro servidor. Para ello, escribimos el comando **a continuación**.
+
+![](./img/16.png)
+
+Reiniciamos el servicio SSH.
+
+![](./img/17.png)
+
+Y ahora comprobamos que el servicio está en ejecución.
+
+![](./img/18.png)
+
+Ahora vamos a personalizar el **bash** en la máquina servidor. Debemos entrar al usuario **carvajal1**, en nuestro caso, y añadir estas lineas a continuación descritas.
+
+![](./img/19.png)
+
+Terminado este paso, creamos el fichero **.alias** descrito en la misma ruta de la foto con el siguiente contenido.
+
+![](./img/20.png)
