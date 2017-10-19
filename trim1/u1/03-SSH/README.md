@@ -76,3 +76,13 @@ Ahora vamos a personalizar el **bash** en la máquina servidor. Debemos entrar a
 Terminado este paso, creamos el fichero **.alias** descrito en la misma ruta de la foto con el siguiente contenido.
 
 ![](./img/20.png)
+
+Nuestro siguiente paso será de configurar SSH para poder acceder desde el cliente1. **Primero** debemos entrar en ssh-clint7a. **Luego** ejecutamos el comando a continuación. Junto con el comando de crear una llave vemos el contenido de la nueva llave.
+
+![](./img/21.png)
+
+Insertamos la nueva llave en el usuario4 de nuestra máquina para permitirle entrar al sistema sin necesidad de password.
+
+![](./img/22.png)
+
+### Uso del SSH como túnel para x
