@@ -59,3 +59,13 @@ Terminado ese paso procederemos a crear un fichero `samba07` con las carpetas `b
 ![](./img/23.png)
 
 ![](./img/24.png)
+
+![](./img/25.png)
+
+![](./img/26.png)
+
+![](./img/27.png)
+
+![](./img/28.png)
+
+![](./img/29.png)
