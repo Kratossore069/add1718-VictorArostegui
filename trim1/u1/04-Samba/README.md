@@ -22,7 +22,11 @@ Terminado ese paso procederemos a crear un fichero `samba07` con las carpetas `b
 
 ![](./img/5.png)
 
+Después, usando el comando `scp` para crear una copia de seguridad.
+
 ![](./img/6.png)
+
+Ahora vamos a configurar el servidor Samba desde el Yast.
 
 ![](./img/7.png)
 
@@ -30,25 +34,39 @@ Terminado ese paso procederemos a crear un fichero `samba07` con las carpetas `b
 
 ![](./img/9.png)
 
+Ahora debemos ir a `Recursos compartidos` y crear recursos llamados `public` y `cdrom`.
+
 ![](./img/10.png)
 
 ![](./img/11.png)
 
 ![](./img/12.png)
 
+Abrimos una consola para comprobar los resultados con el comando `testparm`.
+
 ![](./img/13.png)
 
+Ahora comprobamos la lista de usuarios Samba.
+
 ![](./img/14.png)
+
+Lo siguiente es reiniciar el servicio para valorar los cambios. Se puede hacer por método gráfico.
 
 ![](./img/15.png)
 
 ![](./img/16.png)
 
+Unos comandos de comprobación.
+
 ![](./img/17.png)
 
 ![](./img/18.png)
 
+Una vez en Windows, nos conectamos al servidor Samba y observamos que tenemos acceso a nuestras carpetas.
+
 ![](./img/19.png)
+
+Comprobamos resultados.
 
 ![](./img/20.png)
 
@@ -58,14 +76,34 @@ Terminado ese paso procederemos a crear un fichero `samba07` con las carpetas `b
 
 ![](./img/23.png)
 
+Observamos las conexiones abiertas.
+
 ![](./img/24.png)
 
 ![](./img/25.png)
 
 ![](./img/26.png)
 
+Volviendo a Linux, mostraremos todos los recursos y equipos.
+
 ![](./img/27.png)
 
 ![](./img/28.png)
 
 ![](./img/29.png)
+
+Ahora iremos al fichero de `fstab` para conseguir un montaje automático.
+
+![](./img/30.png)
+
+Por último en el informe, ordenadamente, se solucionan unas preguntas.
+
+![](./img/31.png)
+
+* No, no deben ser las mismas por un tema de seguridad.
+
+* Si no está vinculado con los ficheros de configuración es como si no existiera.
+
+* A partir de la configuración de `/etc/passwd`.
+
+* El efecto que tiene es que ahora todos tienen acceso a Samba con y sin contraseña. 
