@@ -29,3 +29,29 @@ Nos dirigimos a `Yast -> Usuarios y grupos -> Definir filtro -> LAPD` e insertam
 Desde la máquina del cliente podemos hacer ciertas comprobaciones para establecer conexión con el servidor.
 
 ![](./img/cli1.png)
+
+Vamos a la máquina del servidor y creamos con el filtro `LDAP` el grupo **piratas2** y los usuarios correspondientes como aparece en al imagen.
+
+![](./img/9.png)
+
+Con este comando a continuación consultamos la base de datos LDAP.
+
+![](./img/10.png)
+
+Comprobamos que el servidor LDAP es accesible para el cliente.
+
+![](./img/11.png)
+
+Una vez en el cliente, vamos a `Terminal -> gq -> Preferences` e insertamos los datos correspondientes.
+
+![](./img/12.png)
+
+`Yast -> LDAP and Kerberos -> Opciones` y configuramos como en la pantalla.
+
+![](./img/13.png)
+
+Últimas comprobaciones y observamos desde el cliente que funciona.
+
+![](./img/14.png)
+
+![](./img/15.png)
