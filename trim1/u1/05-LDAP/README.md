@@ -25,3 +25,7 @@ Terminada esa verificación, procederemos a instalar una herramienta gráfica de
 Nos dirigimos a `Yast -> Usuarios y grupos -> Definir filtro -> LAPD` e insertamos clientes que aparecerán en la pantalla del gq.
 
 ![](./img/8.png)
+
+Desde la máquina del cliente podemos hacer ciertas comprobaciones para establecer conexión con el servidor.
+
+![](./img/cli1.png)
