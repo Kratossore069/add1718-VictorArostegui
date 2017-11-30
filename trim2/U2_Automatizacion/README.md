@@ -142,3 +142,25 @@ Ahora vamos a crear nuestra propia caja.
 * Crear el usuario Vagrant para poder entrar en la máquina virtual por SSH.
 
 ![](./img/24.png)
+
+![](./img/25.png)
+
+![](./img/26.png)
+
+![](./img/27.png)
+
+* Debemos configurar `/etc/sudoers` para que no nos solicite la contraseña de root.
+
+![](./img/28.png)
+
+#### 6.2 Crear la caja vagrant
+
+* Creamos la carpeta con la nueva caja ue vamos a crear.
+
+![](./img/29.png)
+
+![](./img/30.png)
+
+* Localizamos el nombre de nuestra MV.
+
+![](./img/31.png)
