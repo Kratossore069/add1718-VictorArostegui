@@ -155,7 +155,7 @@ Ahora vamos a crear nuestra propia caja.
 
 #### 6.2 Crear la caja vagrant
 
-* Creamos la carpeta con la nueva caja ue vamos a crear.
+* Creamos la carpeta con la nueva caja que vamos a crear.
 
 ![](./img/29.png)
 
@@ -164,3 +164,11 @@ Ahora vamos a crear nuestra propia caja.
 * Localizamos el nombre de nuestra MV.
 
 ![](./img/31.png)
+
+* Creamos la caja de nuestra máquina Vagrant y visualizamos que se ha creado.
+
+![](./img/32.png)
+
+![](./img/33.png)
+
+![](./img/34.png)
