@@ -1,4 +1,12 @@
-# LDAP
+# LDAP - OpenSuse
+
+## 1. Servidor LDAP
+
+#### 1.1 Preparar la máquina.
+
+Haremos las configuraciones naturales de cada práctica cambiando el nombre del equipo y configurando nuestra información en **hosts**.
+
+#### 1.2 Instalación del Servidor LDAP.
 
 Comenzaremos yendo a `Yast -> Productos adicionales -> Gestor` e instalaremos los paquetes `yast2-auth-server, openlapd2, krb5-server, krb5-client`.
 
@@ -21,6 +29,12 @@ Ahora insertaremos unos comandos para verificar que todo funciona con exactitud.
 Terminada esa verificación, procederemos a instalar una herramienta gráfica del lapd llamada `gq`.
 
 ![](./img/7.png)
+
+#### 1.3 Problemas
+
+
+
+#### 1.4 Crear usuarios y grupos LDAP
 
 Nos dirigimos a `Yast -> Usuarios y grupos -> Definir filtro -> LAPD` e insertamos clientes que aparecerán en la pantalla del gq.
 
