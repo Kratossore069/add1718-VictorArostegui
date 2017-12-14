@@ -6,11 +6,17 @@ Vamos a necesitar dos máquinas virtuales:
 
 * Windows 7/10
 
+## 1. Servidor Samba (MV1)
+
+#### 1.1 Preparativos
+
 Teniendo esto empezamos nuestra práctica con unos comandos iniciales.
 
 ![](./img/1.png)
 
 ![](./img/2.png)
+
+#### 1.2 Usuarios locales
 
 Nuestro siguiente paso es crear usuarios en el servidor de OpenSUSE. Vamos a crear los grupos `soldados`, `piratas` y los usuarios correspondientes para los grupos como `supersamba` y `smbguest`.
 
@@ -41,6 +47,8 @@ Ahora debemos ir a `Recursos compartidos` y crear recursos llamados `public` y `
 ![](./img/11.png)
 
 ![](./img/12.png)
+
+#### 1.3 Crear las carpetas para los futuros recursos compartidos
 
 Abrimos una consola para comprobar los resultados con el comando `testparm`.
 
@@ -106,4 +114,4 @@ Por último en el informe, ordenadamente, se solucionan unas preguntas.
 
 * A partir de la configuración de `/etc/passwd`.
 
-* El efecto que tiene es que ahora todos tienen acceso a Samba con y sin contraseña. 
+* El efecto que tiene es que ahora todos tienen acceso a Samba con y sin contraseña.
