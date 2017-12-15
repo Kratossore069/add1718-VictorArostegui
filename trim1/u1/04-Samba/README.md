@@ -28,10 +28,6 @@ Terminado ese paso procederemos a crear un fichero `samba07` con las carpetas `b
 
 ![](./img/5.png)
 
-Después, usando el comando `scp` para crear una copia de seguridad.
-
-![](./img/6.png)
-
 Ahora vamos a configurar el servidor Samba desde el Yast.
 
 ![](./img/7.png)
@@ -39,6 +35,8 @@ Ahora vamos a configurar el servidor Samba desde el Yast.
 ![](./img/8.png)
 
 ![](./img/9.png)
+
+#### 1.3 Crear las carpetas para los futuros recursos compartidos
 
 Ahora debemos ir a `Recursos compartidos` y crear recursos llamados `public` y `cdrom`.
 
@@ -48,27 +46,57 @@ Ahora debemos ir a `Recursos compartidos` y crear recursos llamados `public` y `
 
 ![](./img/12.png)
 
-#### 1.3 Crear las carpetas para los futuros recursos compartidos
+#### 1.4 Configurar el servidor Samba
+
+Usando el comando `cp`, vamos a crear una copia de seguridad.
+
+![](./img/6.png)
+
+Vamos a ir a `Yast -> Samba Server` para hacer unos cambios.
+
+![](./img/100.png)
+
+![](./img/101.png)
+
+![](./img/103.png)
+
+#### 1.5 Crear los recursos compartidos de Samba
+
+Vamos a los archivos de Samba para configurar el archivo.
+
+![](./img/104.png)
 
 Abrimos una consola para comprobar los resultados con el comando `testparm`.
 
-![](./img/13.png)
+![](./img/105.png)
 
-Ahora comprobamos la lista de usuarios Samba.
+#### 1.6 Usuarios Samba
 
-![](./img/14.png)
+Añadimos usuarios del sistema al Samba. Luego comprobamos la lista de usuarios Samba.
+
+![](./img/106.png)
+
+#### 1.7 Reiniciar
 
 Lo siguiente es reiniciar el servicio para valorar los cambios. Se puede hacer por método gráfico.
 
 ![](./img/15.png)
 
-![](./img/16.png)
+Ahora en nmb.
+
+![](./img/107.png)
 
 Unos comandos de comprobación.
 
 ![](./img/17.png)
 
 ![](./img/18.png)
+
+## 2. Windows (MV3 smb-cli07b)
+
+Debemos configurar el cliente antes de la práctica.
+
+#### 2.1 Cliente Windows GUI
 
 Una vez en Windows, nos conectamos al servidor Samba y observamos que tenemos acceso a nuestras carpetas.
 
@@ -80,9 +108,9 @@ Comprobamos resultados.
 
 ![](./img/21.png)
 
-![](./img/22.png)
-
 ![](./img/23.png)
+
+#### 2.2 Cliente Windows comandos
 
 Observamos las conexiones abiertas.
 
@@ -92,6 +120,28 @@ Observamos las conexiones abiertas.
 
 ![](./img/26.png)
 
+![](./img/108.png)
+
+## 3. Cliente GNU/Linux (MV2 smb-cli07a)
+
+Configuramos el cliente Linux como la teoría nos dice.
+
+#### 3.1 Cliente GNU/Linux GUI
+
+Vamos a nuestro cliente  intentamos conectarnos al servidor Samba.
+
+![](./img/109.png)
+
+Comandos para comprobar resultados.
+
+![](./img/110.png)
+
+![](./img/111.png)
+
+![](./img/112.png)
+
+#### 3.2 Cliente GBU/linu comandos
+
 Volviendo a Linux, mostraremos todos los recursos y equipos.
 
 ![](./img/27.png)
@@ -100,9 +150,13 @@ Volviendo a Linux, mostraremos todos los recursos y equipos.
 
 ![](./img/29.png)
 
-Ahora iremos al fichero de `fstab` para conseguir un montaje automático.
+*Reiniciamos el equipo y comprobar que se realiza el montaje automático.*
+
+Ahora iremos al fichero de `fstab` y lo incluimos en la entrega.
 
 ![](./img/30.png)
+
+## 4. Preguntas para resolver
 
 Por último en el informe, ordenadamente, se solucionan unas preguntas.
 
