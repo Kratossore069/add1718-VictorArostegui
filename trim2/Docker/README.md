@@ -123,4 +123,46 @@ Creamos el directorio `/home/carvajal/docker07` y ponemos dentro ciertos fichero
 
 ![](./img/25.png)
 
-**SIGO EN EL PUNTO 6.2**
+![](./img/26.png)
+
+#### 6.3 Crear imagen desde el Dockerfile
+
+El fichero Dockerfile tiene información para construir el contendor. Hacemos comprobaciones y creamos.
+
+![](./img/26.png)
+
+![](./img/27.png)
+
+![](./img/28.png)
+
+#### 6.4 Crear contenedor y comprobar
+
+Creamos un contenedor a partir de la imagen que antes hemos creado y, además, haremos que ejecute el programa `server.sh`.
+
+![](./img/29.png)
+
+Ahora vamos a otra terminal para hacer más comprobaciones.
+
+![](./img/30.png)
+
+Vamos al navegador y vemos si podemos conectarnos.
+
+![](./img/31.png)
+
+## 7. Migrar las imágenes de docker a otro servidor
+
+Ahora llevamos los contenedores docker a un nuevo servidor. Primero hacemos un backup.
+
+![](./img/32.png)
+
+Luego exportamos imagen docker a fichero.
+
+![](./img/33.png)
+
+Importamos imagen docker desde fichero.
+
+![](./img/34.png)
+
+## 8. Limpiar
+
+Para terminar, paramos los ocntenedores y los destruimos.
