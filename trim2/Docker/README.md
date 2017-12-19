@@ -56,3 +56,71 @@ Crearemos un contenedor Debian8 y, dentro, Nginx.
 **PROBLEMAS CON AL APT-GET NO SE ABRE EL DOCKER**
 
 ![](./img/error.png)
+
+La solución encontrada es `systemctl restart docker`, `docker attach ID` `docker start ID`.
+
+*Seguimos con la práctica entrando en nuestra mv e instalando el nginx y demás.*
+
+![](./img/10.png)
+
+![](./img/11.png)
+
+![](./img/12.png)
+
+![](./img/13.png)
+
+Creamos un fichero HTML.
+
+![](./img/14.png)
+
+Ahora un script con el siguiente contenido en esta dirección.
+
+![](./img/15.png)
+
+*Es importante saber que este fichero debe tener permisos de ejecución.*
+
+![](./img/16.png)
+
+Ahora debemos abrir una nueva imagen con los cambios ya efectuados.
+
+![](./img/17.png)
+
+Aplicamos los cambios.
+
+![](./img/18.png)
+
+Por uĺtimo, insertamos comandos para actualizar nuestros cambios.
+
+![](./img/19.png)
+
+#### 5.2 Crear contenedor con Nginx
+
+Iniciamos el contenedor de la siguiente manera.
+
+![](./img/20.png)
+
+Hecho esto abrimos una terminal y mostramos los contenedores en ejecución.
+
+![](./img/21.png)
+
+Abrimos un navegador para conectar con el servidor.
+
+![](./img/22.png)
+
+Paramos el contenedor y lo eliminamos
+
+![](./img/23.png)
+
+## 6. Crear un contenedor con Dockerfile
+
+#### 6.1 Comprobaciones iniciales
+
+![](./img/24.png)
+
+#### 6.2 Preparar ficheros
+
+Creamos el directorio `/home/carvajal/docker07` y ponemos dentro ciertos ficheros.
+
+![](./img/25.png)
+
+**SIGO EN EL PUNTO 6.2**
