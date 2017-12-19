@@ -54,3 +54,5 @@ Crearemos un contenedor Debian8 y, dentro, Nginx.
 ![](./img/9.png)
 
 **PROBLEMAS CON AL APT-GET NO SE ABRE EL DOCKER**
+
+![](./img/error.png)
