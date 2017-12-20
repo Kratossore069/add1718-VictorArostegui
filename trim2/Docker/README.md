@@ -165,4 +165,4 @@ Importamos imagen docker desde fichero.
 
 ## 8. Limpiar
 
-Para terminar, paramos los ocntenedores y los destruimos.
+Para terminar, paramos los contenedores y los destruimos.
