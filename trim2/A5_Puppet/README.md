@@ -10,3 +10,13 @@ Usaremos tres máquinas virtuales:
 * Master - **SUSE-Master**
 * Cliente1 - **SUSEclientedelcliente**
 * Cliente2 - **Windows7**
+
+#### Configurar /etc/hosts
+
+Una vez configuradas las máquinas virtuales ahora debemos configurar sus `hosts` para poder hacer ping entre ellas.
+
+![](./img/1.png)
+
+![](./img/2.png)
+
+![](./img/3.png)
