@@ -115,7 +115,7 @@ A partir de este momento no debemos cambiar los nombres de las máquinas para ev
 
 #### 4.1 Aceptar certificados
 
-Vamos a la máquina virtual del master y nos aseguramos de que somos `root` y consultamos las peticiones pendientes. Si no saliera nada, desactivamos el cortafuegos y reiniciamos. Es necesario recalcar que debemos tener encendidas las máquinas virtuales del master y el cliente.
+Vamos a la máquina virtual del master y nos aseguramos de que somos `root` y consultamos las peticiones pendientes. Si no saliera nada, desactivamos el cortafuegos y reiniciamos. Es necesario recalcar que debemos tener **encendidas** las máquinas virtuales del **master y el cliente**.
 
 ![](./img/23.png)
 
@@ -129,6 +129,64 @@ Volvemos al cliente1 y reiniciamos el servicio Puppet.
 
 ![](./img/25.png)
 
-Asegurándonos que somos el usuario root, vamos a ejecutar ciertos comandos para comprobar posibles erores.
+Asegurándonos que somos el usuario root, vamos a ejecutar ciertos comandos para comprobar posibles errores.
 
-**Problemas con el certificado**
+![](./img/26.png)
+
+![](./img/27.png)
+
+Como no hay errores continuamos.
+
+## 5. Segunda versión del fichero pp.
+
+Vamos a configurar algo más avanzado. Ahora vamos a insertar como contenido en `/etc/puppet/manifests/classes/hostlinux2.pp` lo siguiente:
+
+![](./img/28.png)
+
+Ahora vamos a modificar la ruta `/etc/puppet/manifests/site.pp` para que utilice la configuración de hostlinux2.
+
+![](./img/29.png)
+
+Ahora comprobamos.
+
+![](./img/30.png)
+
+Y ahora en el cliente1 se deben haber hecho los cambios. **MIRARLO**
+
+## 6. Cliente Puppet Windows
+
+Vamos a configurar Windows.
+
+#### 6.1 Modificaciones en el Master
+
+Yendo a la MV Master y moldeamos el contenido de esta dirección `/etc/puppet/manifests/classes/hostwindows3.pp`.
+
+![](./img/31.png)
+
+Modificamos el fichero `site.pp` para que tenga en cuenta la configuración de clientes de Linux y la de Windows.
+
+![](./img/32.png)
+
+Vemos si tenemos todo lo administrado de buena manera.
+
+ ![](./img/33.png)
+
+ Reiniciamos Puppet Master.
+
+ ![](./img/34.png)
+
+ Usamos cierto comando para ver la versión de Puppet.
+
+ ![](./img/35.png)
+
+ #### 6.2 Modificamos en el cliente2.
+
+ Vamos a instalar el agente de Puppet en Windows con la misma versión que el master de SUSE. Versión 3.8.7.
+
+ ![](./img/36.png)
+
+ **Precaución** *con esta parte por que el nombre de dominio puede dar problemas.*
+
+ ![](./img/37.png)
+
+Hecho esto, repetimos los pasos anteriores para aceptar el certificado nuevo de Windows.
