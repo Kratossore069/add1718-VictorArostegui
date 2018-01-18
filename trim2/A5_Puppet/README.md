@@ -141,6 +141,8 @@ Como no hay errores continuamos.
 
 Vamos a configurar algo más avanzado. Ahora vamos a insertar como contenido en `/etc/puppet/manifests/classes/hostlinux2.pp` lo siguiente:
 
+**Precaución** con esa línea que pone `"poner-una-clave-encriptada"` debido a que hay que insertar una contraseña.
+
 ![](./img/28.png)
 
 Ahora vamos a modificar la ruta `/etc/puppet/manifests/site.pp` para que utilice la configuración de hostlinux2.
@@ -189,4 +191,14 @@ Vemos si tenemos todo lo administrado de buena manera.
 
  ![](./img/37.png)
 
-Hecho esto, repetimos los pasos anteriores para aceptar el certificado nuevo de Windows.
+Hecho esto, repetimos los pasos anteriores para aceptar el certificado nuevo de Windows. **Esto puede dar problemas** así que, si esto sucede, vamos a la máquina virtual del cli2alu07 y vamos al "Agente Puppet".
+
+![](./img/38.png)
+
+![](./img/39.png)
+
+**Si esto ocurre** debemos ir a `C:\Windows\System32\drivers\etc\hosts` y darle privilegios al usuario para modificar ese archivo.
+
+![](./img/40.png)
+
+![](./img/41.png)
