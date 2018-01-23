@@ -159,7 +159,7 @@ Y ahora en el cliente1 se deben haber hecho los cambios. **MIRARLO**
 
 Vamos a configurar Windows.
 
-#### 6.1 Modificaciones en el Master
+#### 6.1 Configuración hostwindows3.pp
 
 Yendo a la MV Master y moldeamos el contenido de esta dirección `/etc/puppet/manifests/classes/hostwindows3.pp`.
 
@@ -181,7 +181,7 @@ Vemos si tenemos todo lo administrado de buena manera.
 
  ![](./img/35.png)
 
- #### 6.2 Modificamos en el cliente2.
+#### 6.2 Instalar el cliente2 Windows.
 
  Vamos a instalar el agente de Puppet en Windows con la misma versión que el master de SUSE. Versión 3.8.7.
 
@@ -202,3 +202,29 @@ Hecho esto, repetimos los pasos anteriores para aceptar el certificado nuevo de 
 ![](./img/40.png)
 
 ![](./img/41.png)
+
+#### 6.3 Comprobamos los cambios.
+
+Estando en el cliente2 en Windows, insertamos los siguientes comandos para averiguar el estado de nuestro trabajo.
+
+![](./img/42.png)
+
+![](./img/43.png)
+
+![](./img/44.png)
+
+## 7. Configuración hostwindows4.pp
+
+Modificamos el fichero `/etc/puppet/manifests/classes/hostwindows4.pp` en el cliente de Windows.
+
+![](./img/45.png)
+
+## 8. Configuración personalizada: hostalumno5.pp
+
+Creamos un nuevo fichero en `/etc/puppet/manifests/classes/hostalumno5.pp`. Ahora incluímos configuraciones.
+
+![](./img/46.png)
+
+## 9. Para probar: Fichero readme.txt
+
+Los ficheros que se guardan en `/etc/puppet/files` se pueden descargar desde el resto de máquinas puppet.
