@@ -54,8 +54,38 @@ Una tarea periódica se ejecuta cada cierto período de tiempo. En esta tarea va
 
 Vamos a hacer lo mismo con Linux - OpenSUSE.
 
-Siguiendo los siguientes comandos de OpenSUSE...
+El servicio `atd` es el responsable de la ejecución de comandos at.
 
-![](./img/13.png)
+![](./img/l1.png)
 
-... vamos a crear un script. Para ello, creamos primero el mensaje que nos va a salir por pantalla cuando se ejecute.
+Debemos crear un script con el siguiente contenido.
+
+![](./img/l2.png)
+
+Si no disponemos del programa `zenity` debemos instalarlo.
+
+![](./img/l3.png)
+
+Una vez instalado, programaremos para cuándo visualizar el archivo. Primero hay que "encender" servicio `atd`.
+
+![](./img/l4.png)
+
+Los comandos más básicos son.
+
+![](./img/l5.png)
+
+## 4. Linux - Tarea periódica
+
+El comando `crontab` sirve para que los usuarios normales programen sus tareas periódicas.
+
+Observamos que no hay tareas programadas.
+
+![](./img/ll1.png)
+
+Abre el editor para crear una nueva tarea programada con `crontab -e`.
+
+![](./img/ll2.png)
+
+Y para consultar la tarea que tenemos programada...
+
+![](./img/ll3.png)
