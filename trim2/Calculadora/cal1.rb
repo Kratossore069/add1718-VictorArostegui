@@ -7,6 +7,7 @@ num2 = ARGV[2].to_i
 if ARGV.size == 3
 
   if op == '+'
+  then
     suma = num1 + num2
     puts "El resultado es #{suma}"
 
