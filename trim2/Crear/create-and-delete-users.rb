@@ -1,15 +1,16 @@
 #!/usr/bin/ruby
 
-admin = `whoami`
+user = `whoami`
+admin = user.chomp # -----> chomp es para quitar el \n del final, no es como un split.
 
 if admin != "root"
   puts "Debe ser el usuario root para acceder a este script."
   exit
   
   
-elsif admin == "root"
-  file = `cat userslist.txt`
-  file = file.split("\n")
+else
+  texto = `cat userslist.txt`
+  file = texto.split("\n")
   
   
   if file[4] == "delete"
