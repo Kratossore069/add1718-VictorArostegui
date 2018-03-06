@@ -19,7 +19,7 @@ if users != "root"
     inf = info.split(":") # Ahora lo separo por :
     puts "#{inf}"
     
-    usuario.each do |cambio|
+    inf.each do |cambio|
       cambio = inf
       if cambio[4] == "add"
         puts "Crearemos el usuario #{cambio[0]}"
