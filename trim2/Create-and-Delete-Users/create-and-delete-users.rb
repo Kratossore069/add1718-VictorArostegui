@@ -6,8 +6,9 @@ usuario = usuario.split("\n")
 puts "La cadena que se va a trabajar es #{usuario}" 
 
 user = `whoami`
+users = user.split("\n")
 
-if user == "asir"
+if users != "root"
   then
     puts "No puede ejecutar este script debido a que no es el usuario root."
   else
@@ -18,13 +19,15 @@ if user == "asir"
     inf = info.split(":") # Ahora lo separo por :
     puts "#{inf}"
     
-    if inf[4] == "add"
-      puts "Crearemos el usuario #{inf[0]}"
-      system("sudo useradd -g victor -d /home -m -s /bin/bash victor")
-      puts "Usuario #{inf[0]} creado."
+    usuario.each do |cambio|
+      if inf[4] == "add"
+        puts "Crearemos el usuario #{inf[0]}"
+        system("sudo useradd -g victor -d /home -m -s /bin/bash victor")
+        puts "Usuario #{inf[0]} creado."
       
-    elsif inf[4] == "delete"
-      puts "Eliminaremos el usuario #{inf[0]}"
-      system("sudo userdel -r victor")
+      elsif inf[4] == "delete"
+        puts "Eliminaremos el usuario #{inf[0]}"
+        system("sudo userdel -r victor")
+      end
     end
 end

@@ -6,7 +6,7 @@ fich = fichero.split("\n")  				# Con esa variable que contiene el argumento, el
 puts "El contenido del fichero es #{fich}"
 
 fich.each do |user|  
-  if user == " "
+  if user != ""
     then
       system("sudo userdel -r #{user}")
       puts "Se ha eliminado el usuario #{user}"
