@@ -25,6 +25,6 @@ if user == "asir"
       
     elsif inf[4] == "delete"
       puts "Eliminaremos el usuario #{inf[0]}"
-      system("")
+      system("sudo userdel -r victor")
     end
 end
