@@ -20,14 +20,19 @@ if users != "root"
     puts "#{inf}"
     
     usuario.each do |cambio|
-      if inf[4] == "add"
-        puts "Crearemos el usuario #{inf[0]}"
-        system("sudo useradd -g victor -d /home -m -s /bin/bash victor")
-        puts "Usuario #{inf[0]} creado."
+      cambio = inf
+      if cambio[4] == "add"
+        puts "Crearemos el usuario #{cambio[0]}"
+        system("sudo useradd #{cambio[0]}")
+        puts "Usuario #{cambio[0]} creado."
       
-      elsif inf[4] == "delete"
-        puts "Eliminaremos el usuario #{inf[0]}"
-        system("sudo userdel -r victor")
+      elsif cambio[4] == "delete"
+        puts "Eliminaremos el usuario #{cambio[0]}"
+        system("sudo userdel -r #{cambio[0]}")
+      end
+      
+      if cambio[2] == ""
+	    puts "El usuario #{cambio[0]} no tiene email."
       end
     end
 end
